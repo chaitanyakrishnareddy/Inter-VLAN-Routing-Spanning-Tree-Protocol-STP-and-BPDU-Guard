@@ -2,8 +2,14 @@
  Protocol (STP), and BPDU Guard using Cisco Packet Tracer. The lab shows how to segment traffic
  with VLANs, enable router-on-a-stick for routing, prevent loops with STP, and secure access ports
  using BPDU Guard.
- Lab Topology:- Router0 (2911)- Switch0 (2960)- Switch1 (2960)- PCs: PC0 (VLAN 10), PC1 (VLAN 20), PC2 (VLAN 20)
- VLAN & IP Plan:- VLAN 10: 192.168.10.0/24 → Gateway 192.168.10.1- VLAN 20: 192.168.20.0/24 → Gateway 192.168.20.1
+ Lab Topology:- 
+ Router0 (2911)
+ Switch0 (2960
+ Switch1 (2960)
+ PCs: PC0 (VLAN 10), PC1 (VLAN 20), PC2 (VLAN 20)
+ VLAN & IP Plan:
+ VLAN 10: 192.168.10.0/24 → Gateway 192.168.10.1
+ VLAN 20: 192.168.20.0/24 → Gateway 192.168.20.1
  Configuration Steps
  1. On Switch0 (main switch):- Create VLANs 10 & 20 and assign ports.- Configure trunk to Router0 (Gig0/0) and Switch1.- Enable PortFast and BPDU Guard on access ports.
  2. On Switch1 (secondary switch):- Create VLANs 10 & 20.- Assign access port for PC2.- Configure trunk links back to Switch0.
